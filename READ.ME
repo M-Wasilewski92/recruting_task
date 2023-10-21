@@ -1,0 +1,9 @@
+Aplikacja Django.
+
+Pobieramy dane z pól z XMLa indywidualnym kluczem każdego produktu będzie pole EAN https://xml.espir.com/qty.xml
+Aktualizujemy pole QTY (Q) na podstawie EAN (E) z drugiego XML https://xml.espir.com/qty_lite.xml rejestrując w bazie tylko jeżeli QTY nowe jest inne niż przy ostatniej aktualizacji (istotny będzie pomysł jak szybko i efektywnie porównać dane z bazy z danymi z XML
+ważne jest aby zachować archiwalne dane te które się zmieniły zapisując czas zmiany w czasie co do sekundy na danym produkcie
+Generowanie zestawienia na Mail w cyklu raz na godzinę które produkty i o ile się zmieniły.+
+docelowo do tego dorobimy funkcjonalność aby dane QTY które się zmieniły skrypt zmieniał przez api na portalu typu marketplace allegro.
+Celem również jest optymalizacja skryptu aby cały cykl trwał mniej niż minutę (o ile to możliwe)
+
